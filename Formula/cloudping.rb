@@ -5,20 +5,20 @@
 class Cloudping < Formula
   desc "cloudping identifies the cloud provider regions geographically closest and returns them in order of lowest to highest latency."
   homepage "https://github.com/estahn/cloudping"
-  version "1.2.156"
+  version "1.2.157"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/estahn/cloudping/releases/download/v1.2.156/cloudping_1.2.156_darwin_arm64.tar.gz"
-      sha256 "a63f2dae1bc8461d379949124c42a3cc550cb7c1573e6cd99e1f488edf46efca"
+      url "https://github.com/estahn/cloudping/releases/download/v1.2.157/cloudping_1.2.157_darwin_arm64.tar.gz"
+      sha256 "2d30dd0e705cfc39f16200910170e06b9797d34bc90e0a91c48595fd3ecb63d5"
 
       def install
         bin.install "cloudping"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/estahn/cloudping/releases/download/v1.2.156/cloudping_1.2.156_darwin_amd64.tar.gz"
-      sha256 "841ad57d9ad1eee576c090a09fa504ff91e126bfd666f79e3e33e519c5c0159c"
+      url "https://github.com/estahn/cloudping/releases/download/v1.2.157/cloudping_1.2.157_darwin_amd64.tar.gz"
+      sha256 "5ec7aa06501ee0d8ce3f73bfa10b9c19254cd76df6837a757f4f3b3b1ae36f16"
 
       def install
         bin.install "cloudping"
@@ -28,24 +28,24 @@ class Cloudping < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/estahn/cloudping/releases/download/v1.2.156/cloudping_1.2.156_linux_armv6.tar.gz"
-      sha256 "61fd9d50babd72e22341fbf77fe6a37082edf7068f4ff6f47284e9f81529a72f"
+      url "https://github.com/estahn/cloudping/releases/download/v1.2.157/cloudping_1.2.157_linux_armv6.tar.gz"
+      sha256 "877fc08d4d6538433746ee02b2f1e8f67fd28811663a662427566159325a8ba6"
 
       def install
         bin.install "cloudping"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/estahn/cloudping/releases/download/v1.2.156/cloudping_1.2.156_linux_arm64.tar.gz"
-      sha256 "0d56fa736dadfbb30522821db53cad8a111a69dae02f3e2d6bf48f61254d6a4c"
+      url "https://github.com/estahn/cloudping/releases/download/v1.2.157/cloudping_1.2.157_linux_arm64.tar.gz"
+      sha256 "50d21ec0c2d69bf8fe037748ec3be86e15733853e541cb81ad27a6766cf226e4"
 
       def install
         bin.install "cloudping"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/estahn/cloudping/releases/download/v1.2.156/cloudping_1.2.156_linux_amd64.tar.gz"
-      sha256 "6cc9d0fd3612b4a471ebb1880b4cd96ef0951314a25cfda83a8293f52cceb35d"
+      url "https://github.com/estahn/cloudping/releases/download/v1.2.157/cloudping_1.2.157_linux_amd64.tar.gz"
+      sha256 "fc5ef696c2574ea32fcab2142fda009d276273ac724234ef536dcb47d1817bf2"
 
       def install
         bin.install "cloudping"
